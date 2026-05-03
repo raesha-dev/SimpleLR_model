@@ -35,8 +35,11 @@ pip install pandas numpy scikit-learn matplotlib
 Already installed:
 
 pandas (3.0.2)
+
 numpy (2.4.4)
+
 python-dateutil (2.9.0)
+
 six (1.17.0)
 
 Note: Restart the kernel after installing/updating packages.
