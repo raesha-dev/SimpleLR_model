@@ -57,7 +57,7 @@ salary-lr/
 
 ## Implementation Steps
 
-# 1. Import Libraries
+### 1. Import Libraries
 
 ```
 import pandas as pd
@@ -67,13 +67,13 @@ from sklearn.model_selection import train_test_split
 from sklearn.linear_model import LinearRegression
 ```
 
-# 2. Load Dataset
+### 2. Load Dataset
 ```
 df = pd.read_csv("salary_data.csv")
 print(df.head())
 ```
 
-# 3. Split Data
+### 3. Split Data
 ```
 X = df[['YearsExperience']]
 y = df['Salary']
@@ -81,17 +81,17 @@ X_train, X_test, y_train, y_test = train_test_split(
   X, y, test_size=0.2, random_state=42
 )
 ```
-# 4. Train Model
+### 4. Train Model
 ```
 model = Simple_LR()
 model.fit(X_train, y_train)
 ```
 
-# 5. Make Predictions
+### 5. Make Predictions
 ```
 y_pred = model.predict(X_test)
 ```
-# 6. Evaluate Model
+### 6. Evaluate Model
 ```
 from sklearn.metrics import mean_squared_error, r2_score
 mse = mean_squared_error(y_test, y_pred)
@@ -100,7 +100,7 @@ print("MSE:", mse)
 print("R2 Score:", r2)
 ```
 
-# 7. Visualization
+### 7. Visualization
 ```
 plt.scatter(X, y, color='blue')
 plt.plot(X, model.predict(X), color='red')
